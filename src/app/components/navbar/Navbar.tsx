@@ -16,12 +16,12 @@ const Navbar = () => {
   return (
     <div className="h-[12vh] w-full bg-[#ffb349]">
       <div className='mx-5 align-middle '>
-      <button type='button' className="hover:bg-[#ed8a58] px-2" onClick={()=>router.push('/')}> Home </button>
-      <button type='button' className="hover:bg-[#ed8a58] px-2" onClick={()=>router.push('/shop')}> Shop </button>
-      <button type='button' className="hover:bg-[#ed8a58] px-2" onClick={()=>router.push('/about')}> About </button>
-      <button type='button' className="hover:bg-[#ed8a58] px-2" onClick={()=>router.push('/contact')}> Contact </button>
+      <button type='button' className="hover:bg-[#ed8a58] my-5 px-2" onClick={()=>router.push('/')}> HOME </button>
+      <button type='button' className="hover:bg-[#ed8a58] my-5 px-2" onClick={()=>router.push('/shop')}> SHOP </button>
+      <button type='button' className="hover:bg-[#ed8a58] my-5 px-2" onClick={()=>router.push('/about')}> ABOUT </button>
+      <button type='button' className="hover:bg-[#ed8a58] my-5 px-2" onClick={()=>router.push('/contact')}> CONTACT </button>
       </div>      
-      <div></div>
+      <div className='w-full'></div>
       <div></div>
     </div>
   )
