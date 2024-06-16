@@ -3,7 +3,7 @@ import React from "react";
 import Navbar from "./components/navbar/Navbar";
 import { Inter } from "next/font/google";
 import "./globals.css";
-
+import Footer from "./components/footer/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -18,8 +18,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <header>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+      </header>
       <Navbar />
       <body className={inter.className}>{children}</body>
+      <Footer />
     </html>
   );
 }
